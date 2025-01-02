@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            margin-bottom: 20px;
+            background: url('./img/header.webp') no-repeat center center;
+            background-size: cover;
+            padding: 40px 20px;
+            color: hsl(0, 0%, 100%);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            margin: 10px 0 0;
+            text-align: center;
+        }
+
+        .image-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+            margin-bottom: 40px;
+        }
+
+        .image-grid a {
+            text-decoration: none;
+            position: relative;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            background: repeating-linear-gradient(45deg, #ccc, #ccc 10px, #e0e0e0 10px, #e0e0e0 20px);
+            transition: transform 0.3s ease;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.1);
+        }
+
+        .image-grid a::after {
+            content: "A Data-Driven Machine Learning Framework for Wind Speed Forecasting in Taiwan’s Renewable Energy Industry";
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .image-grid a:hover::after {
+            display: block;
+        }
+
+        .image-grid-small {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .image-grid-small a {
+            text-decoration: none;
+            position: relative;
+        }
+
+        .image-grid-small img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: repeating-linear-gradient(45deg, #ccc, #ccc 10px, #e0e0e0 10px, #e0e0e0 20px);
+            transition: transform 0.3s ease;
+        }
+
+        .image-grid-small img:hover {
+            transform: scale(1.1);
+        }
+
+        .image-grid-small a::after {
+            content: attr(data-title);
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .image-grid-small a:hover::after {
+            display: block;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        section div {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Haidar Rahman, S.T., M.S.</h1>
+            <h2>Portofolio</h2>
+        </header>
+        
+        <div class="image-grid">
+            <a href="large-image-link.html"><img src="img\hybrid.webp" alt="Large Project Image Placeholder"></a>
+        </div>
+
+        <div class="image-grid-small">
+            <a href="https://journal.uty.ac.id/index.php/IJETS/article/view/69" data-title="A Wind Forecasting Model Using Regression and Genetic Algorithm to Solve Economic Dispatch for Evaluating a Hybrid Power System"><img src="img\powerplants.webp" alt="Small Image Placeholder 1"></a>
+            <a href="https://iopscience.iop.org/article/10.1088/1755-1315/997/1/012019/meta" data-title="Artificial Neural Network Performance Analysis for Solar Radiation Prediction, Case Study at Baron Techno Park"><img src="img\solar.webp" alt="Small Image Placeholder 2"></a>
+            <a href="https://journal.uty.ac.id/index.php/IJETS/article/view/115" data-title="Predicting Wind Turbine Scheduling Maintenance Using Artificial Neural Network for Preventing Blade Breakage: Case Study Baron Techno-Park"><img src="img\wind.webp" alt="Small Image Placeholder 3"></a>
+        </div>
+
+        <section>
+            <div>
+                <h2>About Me</h2>
+                <p>Born in 1993 in Yogyakarta, Indonesia, I spent fifteen formative years in Australia, developing a deep appreciation for intercultural competence and a global perspective. After earning my bachelor’s degree, I pursued advanced studies in Taiwan, further expanding my understanding of diverse cultural norms. My professional philosophy centers on fostering a positive, collaborative, and respectful work environment. I believe that these values are essential to building strong teams and driving innovation. Whether in coaching or research, I am committed to mentoring, promoting diversity of thought, and contributing to a global, technology-driven future.</p>
+            </div>
+            <div>
+                <h2>Speciality</h2>
+                <p>I currently work as an Artificial Intelligence (AI) Coach and Cloud Computing Coach specializing in AWS.</p>
+                <p>As an AI Coach, I teach university students the fundamentals and advanced applications of data science. My courses cover essential AI topics, including machine learning, deep learning, and data analytics. By blending theory with hands-on experience, I prepare students to apply AI to real-world challenges across industries.</p>
+                <p>In my role as a Cloud Computing Coach, I specialize in Amazon Web Services (AWS) and hold a Cloud Computing Practitioner Certificate. I develop and deliver comprehensive training on cloud infrastructure, scalable applications, and cloud-based solutions, enabling professionals to leverage AWS for business and operational needs.</p>
+                <p>As a Microsoft Teams Coach, I focus on training Indonesian teachers on 21st Century Curriculum Learning Design. I guide educators in integrating Microsoft tools to create engaging, collaborative, and interactive learning environments that enhance both remote and in-class teaching.</p>
+                <p>My research as a Data Science Power System Researcher focuses on integrating AI and machine learning into power system optimization. My work aims to improve efficiency and sustainability in energy management, particularly as industries transition to smart grid technologies and renewable energy sources.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>TukangListrik 2025 | Yogyakarta</p>
+        </footer>
+    </div>
+</body>
+</html>
