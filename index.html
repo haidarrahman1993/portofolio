@@ -147,10 +147,40 @@
         }
 
         footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #999;
-            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #05ccc2;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+        }
+
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-left p {
+            margin: 5px 0;
+        }
+
+        .footer-right {
+            text-align: right;
+        }
+
+        .footer-right img {
+            max-height: 150px;
+            border-radius: 10px;
+        }
+
+        .tech-logos {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tech-logos img {
+            height: 40px;
+            width: auto;
         }
     </style>
 </head>
@@ -187,7 +217,20 @@
         </section>
 
         <footer>
-            <p>TukangListrik 2025 | Yogyakarta</p>
+            <div class="footer-left">
+                <p>Email: haidarrahman1993@gmail.com</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/haidar-rahman-s-t-m-s-8511lr3na/" style="color: rgb(0, 0, 0);">https://www.linkedin.com/in/haidar-rahman-s-t-m-s-8511lr3na/</a></p>
+                <p>Phone: +628112539596</p>
+                <div class="tech-logos">
+                    <img src="img\python.png" alt="Python Logo">
+                    <img src="img\matlab.png" alt="Matlab Logo">
+                    <img src="img\mysql.png" alt="MySQL Logo">
+                </div>
+            </div>
+            <div class="footer-right">
+                <img src="img\Nikolai_Tesla.png" alt="Nikola Tesla">
+                <p style="margin-top: 10px;">"The present is theirs; the future, for which I really worked, is mine." - Nikola Tesla</p>
+            </div>
         </footer>
     </div>
 </body>
